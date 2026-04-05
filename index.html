@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Smart Exam Hall Allocation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>📚 Smart Exam Hall Allocation System</h1>
+
+    <!-- STUDENT FORM -->
+    <div class="container">
+        <h2>🎓 Add Student</h2>
+
+        <input type="text" id="name" placeholder="Student Name">
+        <input type="text" id="studentId" placeholder="StudentId">
+        <input type="text" id="department" placeholder="Department">
+		<input type="text" id="year" placeholder="year">
+		<input type="text" id="section" placeholder="section">
+		
+
+        <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <!-- HALL FORM -->
+    <div class="container">
+        <h2>🏫 Add Hall</h2>
+
+        <input type="text" id="hallName" placeholder="Hall Name">
+        <input type="number" id="totalSeats" placeholder="totalSeats">
+
+        <button onclick="addHall()">Add Hall</button>
+    </div>
+
+    <!-- ALLOCATION -->
+    <div class="container">
+        <h2>🪑 Seat Allocation</h2>
+
+        <button onclick="allocateSeats()">Allocate Seats</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
